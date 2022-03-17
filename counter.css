@@ -1,0 +1,114 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+   background-color: black;
+   color: white; 
+   font-family: sans-serif;
+}
+.main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+.balls
+{
+    border-radius: 50%;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes zoom 
+{
+    0%{width: 5px; height: 5px;}
+    50%{width: 25px; height: 25px;}
+    100%{width: 50px; height: 50px;}
+  }
+.blue
+{
+    background: rgba(81, 81, 216, 0.568);
+    top: 30%;
+    left: 25%;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+}
+.pink
+{
+    
+    background: rgba(153, 56, 72, 0.671);
+    top: 50%;
+    left: 75%;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+}
+.green 
+{
+    background: rgba(0, 128, 0, 0.644);
+    left: 50%;
+    animation-timing-function: ease-out;
+    animation-delay: 1.5s;
+}
+.count
+{
+    z-index: 2;
+}
+.count h1
+{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.count p
+{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.btns
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.btn
+{
+    width: 120px;
+    height: 40px;
+    text-transform: capitalize;
+    background-color: whitesmoke;
+    outline: none;
+    font-size: large;
+    font-weight: bold;
+}
+.btn:hover
+{
+    background-color: darkslategray;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 600px)
+{
+   .btns
+   {
+       flex-direction: column;
+       align-content: space-between;
+       justify-content: center;
+       align-items: center;
+   } 
+   .btn
+   {
+       margin-left: 70px;
+       margin-top: 10px;
+   }
+}
