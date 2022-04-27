@@ -1,3 +1,4 @@
+/* General Styling  */
 *
 {
     padding: 0;
@@ -17,6 +18,7 @@ body
     align-items: center;
     height: 650px;
 }
+/* Balls Styling  */
 .balls
 {
     border-radius: 50%;
@@ -27,12 +29,14 @@ body
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+/* Balls Animation Styling  */
 @keyframes zoom 
 {
     0%{width: 5px; height: 5px;}
     50%{width: 25px; height: 25px;}
     100%{width: 50px; height: 50px;}
-  }
+}
+/* Blue  */
 .blue
 {
     background: rgba(81, 81, 216, 0.568);
@@ -41,6 +45,7 @@ body
     animation-timing-function: ease;
     animation-delay: 0.5s;
 }
+/* Pink  */
 .pink
 {
     
@@ -50,6 +55,7 @@ body
     animation-timing-function: ease-in;
     animation-delay: 1s;
 }
+/* Green  */
 .green 
 {
     background: rgba(0, 128, 0, 0.644);
@@ -57,10 +63,12 @@ body
     animation-timing-function: ease-out;
     animation-delay: 1.5s;
 }
+/* Content Styling  */
 .count
 {
     z-index: 2;
 }
+/* Title Styling  */
 .count h1
 {
     text-transform: uppercase;
@@ -68,12 +76,14 @@ body
     margin-bottom: 50px;
     text-align: center;
 }
+/* Number Styling  */
 .count p
 {
     font-size: 4rem;
     text-align: center;
     margin-bottom: 30px;
 }
+/* Buttons Styling  */
 .btns
 {
     display: flex;
@@ -91,12 +101,14 @@ body
     font-size: large;
     font-weight: bold;
 }
+/* Button Hovering Styling  */
 .btn:hover
 {
     background-color: darkslategray;
     color: whitesmoke;
 }
 
+/* Smaller Screen Styling  */
 @media screen and (max-width: 600px)
 {
    .btns
